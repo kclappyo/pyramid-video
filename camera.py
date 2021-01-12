@@ -14,7 +14,3 @@ class VideoCamera():
     # # encode OpenCV raw frame to jpg and displaying it
     ret, jpeg = cv2.imencode('.jpg', frame)
     return jpeg.tobytes()
-
-  def run(self):
-    while(True):
-      frame = self.get_frame()
